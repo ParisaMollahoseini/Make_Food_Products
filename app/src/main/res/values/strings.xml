@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">تهیه ی محلول غذایی گیاهان گلخانه ای</string>
+    <string name="title_spinner">"choose"</string>
+    <string name="email"><p dir="rtl"> پدیدآورنده: دکتر حمید ملاحسینی\n سازنده: پریسا ملاحسینی\n</p></string>
+    <string name="my_email"><a href="p_mollahoseini@ec.iut.ac.ir">p_mollahoseini@ec.iut.ac.ir</a></string>
+</resources>

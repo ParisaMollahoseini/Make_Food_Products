@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="list_useful_compost">
+        <item>"--یکی از کودهای زیر را انتخاب کنید--</item>
+        <item>"کود نیتروژن دار"</item>
+        <item>"کود کلسیم دار"</item>
+        <item>"کود پتاسیم دار"</item>
+        <item>"کود فسفر دار"</item>
+        <item>"کود منیزیم دار"</item>
+        <item>"کود گوگرد دار"</item>
+    </string-array>
+    <string-array name="N_composts">
+        <item>"نیترات آمونیوم"</item>
+        <item>"اسید نیتریک"</item>
+    </string-array>
+    <string-array name="Ca_composts">
+        <item>"نیترات کلسیم"</item>
+    </string-array>
+    <string-array name="K_composts">
+        <item>"نیترات پتاسیم"</item>
+        <item>"سولفات پتاسیم"</item>
+    </string-array>
+    <string-array name="P_composts">
+        <item>"مونوپتاسیم فسفات"</item>
+        <item>"مونوآمونیوم فسفات"</item>
+        <item>"اسید فسفریک"</item>
+    </string-array>
+    <string-array name="Mg_composts">
+        <item>"سولفات منیزیم"</item>
+        <item>"نیترات منیزیم"</item>
+    </string-array>
+    <string-array name="S_composts">
+        <item>"اسید سولفوریک"</item>
+    </string-array>
+
+</resources>

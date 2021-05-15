@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="product_type">
+        <item>"خیار"</item>
+        <item>"گوجه"</item>
+        <item>"بادمجان"</item>
+        <item>"فلفل"</item>
+        <item>"رز"</item>
+        <item>"توت فرنگی"</item>
+    </array>
+    <array name="grow_period">
+        <item>"نشائی"</item>
+        <item>"رویشی"</item>
+        <item>"رویشی زایشی"</item>
+    </array>
+</resources>

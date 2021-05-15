@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#FFFF">
+
+    <TextView
+        android:id="@+id/title5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:foregroundGravity="right"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingRight="3dp"
+        android:text="نوع اسید"
+        android:textColor="@color/main_color"
+        android:textSize="50dp" />
+    <View
+        android:id="@+id/divider_acid"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/title5"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="#039E43" />
+    <ScrollView
+        android:id="@+id/container_scroll_view"
+        style="@android:style/Widget.Holo.Light.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/divider_acid"
+        android:clipToPadding="true"
+        android:fillViewport="true">
+
+        <GridLayout
+            android:id="@+id/grid5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:background="#FFFF"
+            android:columnCount="1"
+            android:orientation="vertical"
+            android:rowCount="3"
+            android:rowOrderPreserved="false"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="right">
+
+            <TextView
+                android:id="@+id/title_metric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_marginTop="10dp"
+
+                android:foregroundGravity="right"
+                android:paddingRight="7dp"
+                android:text="*نوع اسید را تیک بزنید*"
+                android:textColor="#FFFF"
+                android:background="@drawable/spinner2"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext"
+                android:checkedButton="@id/checkbox_nitricacid"
+                android:contentDescription="Layouts"
+                android:gravity="right|center_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp">
+
+                <RadioButton
+                    android:id="@+id/checkbox_nitricacid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="اسید نیتریک :"
+
+
+                    android:textColor="@color/blue"
+                    android:textSize="36sp"
+                    android:theme="@style/checkbox" />
+
+                <RadioButton
+                    android:id="@+id/checkbox_phosphoric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="اسید فسفریک :"
+
+                    android:textColor="@color/blue"
+                    android:textSize="36sp"
+                    android:theme="@style/checkbox" />
+
+                <RadioButton
+                    android:id="@+id/checkbox_sulfuric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="اسید سولفوریک :"
+
+                    android:textColor="@color/blue"
+                    android:textSize="36sp"
+                    android:theme="@style/checkbox" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
+                android:background="#FFFF"
+                android:dividerPadding="50dp"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/next4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+
+
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:text="مرحله ی بعد"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/back4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+
+
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:text="مرحله ی قبل"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </GridLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

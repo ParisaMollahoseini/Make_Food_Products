@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:foregroundGravity="right"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingRight="3dp"
+        android:text="کودهای پرمصرف"
+        android:textColor="@color/main_color"
+        android:textSize="50dp" />
+
+    <View
+        android:id="@+id/divider_useful"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/title2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+
+        android:background="@color/main_color" />
+
+    <ScrollView
+        android:id="@+id/container_scroll_view"
+        style="@android:style/Widget.Holo.Light.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/divider_useful"
+        android:clipToPadding="true"
+        android:fillViewport="true">
+
+        <GridLayout
+            android:id="@+id/grid2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFF"
+
+            android:columnCount="1"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:rowCount="7"
+            android:rowOrderPreserved="false"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="right">
+
+            <TextView
+                android:id="@+id/title_metric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/spinner2"
+                android:foregroundGravity="right"
+                android:paddingRight="7dp"
+                android:text="*واحدها برحسب درصد است*"
+                android:textColor="#FFFF"
+
+                android:textSize="30dp" />
+
+            <Spinner
+                android:id="@+id/spinner_choose"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_row="1"
+                android:layout_gravity="right"
+
+
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/spinner"
+                android:entries="@array/list_useful_compost"
+                android:gravity="center_horizontal"
+                android:minWidth="200dp"
+
+
+                android:minHeight="50dp"
+                android:textAlignment="center" />
+
+
+            <LinearLayout
+                android:id="@+id/first_compost_useful_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_marginBottom="30dp"
+                android:background="#FFFF"
+
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:id="@+id/first_compost_useful_layout_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_weight="1"
+                    android:background="#FFFF"
+
+                    android:orientation="horizontal"
+
+                    android:visibility="invisible">
+
+
+                    <EditText
+                        android:id="@+id/edit_first_useful_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext"
+                        android:gravity="center_vertical"
+                        android:hint="0.0"
+                        android:textColor="@color/edit" />
+
+
+                    <TextView
+                        android:id="@+id/first_useful_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="#FFFF"
+
+                        android:gravity="right"
+
+
+                        android:includeFontPadding="false"
+                        android:paddingTop="5dp"
+                        android:text="mg"
+                        android:textColor="#059A77"
+                        android:textIsSelectable="false"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/first_compost_useful_layout_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:background="#FFFF"
+
+
+                    android:orientation="horizontal"
+
+                    android:visibility="invisible">
+
+                    <EditText
+                        android:id="@+id/edit_first_useful_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext"
+                        android:gravity="center_vertical"
+                        android:hint="0.0"
+                        android:textColor="@color/edit" />
+
+
+                    <TextView
+                        android:id="@+id/first_useful_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+
+                        android:background="#FFFF"
+
+                        android:gravity="right"
+                        android:paddingTop="5dp"
+                        android:text="mg"
+                        android:textColor="#059A77"
+                        android:textIsSelectable="false"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/checkbox_layout1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:checked="false"
+                    android:shadowColor="#059A77"
+                    android:textSize="0sp"
+                    android:theme="@style/checkbox" />
+
+                <TextView
+                    android:id="@+id/first_useful_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"
+                    android:background="#FFFF"
+
+                    android:gravity="right"
+                    android:paddingTop="5dp"
+                    android:text="کودهای نیتروژن دار"
+                    android:textColor="#059A77"
+                    android:textIsSelectable="false"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/second_compost_useful_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/linearlayout"
+
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:id="@+id/second_compost_useful_layout_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_weight="1"
+
+                    android:orientation="horizontal"
+
+                    android:visibility="invisible">
+
+                    <EditText
+                        android:id="@+id/edit_second_useful_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext"
+                        android:gravity="center_vertical"
+
+
+                        android:hint="0.0"
+                        android:textColor="@color/edit"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/second_useful_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:includeFontPadding="false"
+                        android:paddingTop="5dp"
+
+                        android:text="mg"
+                        android:textColor="#FFFF"
+                        android:textIsSelectable="false"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/second_compost_useful_layout_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+
+                    android:orientation="horizontal"
+
+                    android:visibility="invisible">
+
+                    <EditText
+                        android:id="@+id/edit_second_useful_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext"
+                        android:gravity="center_vertical"
+                        android:hint="0.0"
+                        android:textColor="@color/edit"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/second_useful_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="right"
+
+                        android:paddingTop="5dp"
+                        android:text="mg"
+                        android:textColor="#FFFF"
+                        android:textIsSelectable="false"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/checkbox_layout2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.3"
+                    android:checked="false"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:shadowColor="#FFFFFF"
+                    android:theme="@style/checkbox_2" />
+
+                <TextView
+                    android:id="@+id/second_useful_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"
+
+                    android:gravity="right"
+
+                    android:paddingTop="5dp"
+                    android:text="کودهای نیتروژن دار"
+                    android:textColor="#FFFF"
+                    android:textIsSelectable="false"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/third_compost_useful_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_marginBottom="30dp"
+                android:background="#FFFF"
+
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:id="@+id/third_compost_useful_layout_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_weight="1"
+                    android:background="#FFFF"
+
+                    android:orientation="horizontal"
+
+                    android:visibility="invisible">
+
+                    <EditText
+                        android:id="@+id/edit_third_useful_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext"
+                        android:gravity="center_vertical"
+                        android:hint="0.0"
+                        android:textColor="@color/edit"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/third_useful_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:includeFontPadding="false"
+                        android:paddingTop="5dp"
+
+                        android:text="mg"
+                        android:textColor="@color/blue"
+                        android:textIsSelectable="false"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/third_compost_useful_layout_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:background="#FFFF"
+
+
+                    android:orientation="horizontal"
+
+                    android:visibility="invisible">
+
+                    <EditText
+                        android:id="@+id/edit_third_useful_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+
+                        android:background="@drawable/edittext"
+                        android:gravity="center_vertical"
+                        android:hint="0.0"
+                        android:textColor="@color/edit" />
+
+
+                    <TextView
+                        android:id="@+id/third_useful_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:paddingTop="5dp"
+                        android:text="mg"
+
+                        android:textColor="@color/blue"
+                        android:textIsSelectable="false"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/checkbox_layout3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.3"
+                    android:checked="false"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:shadowColor="@color/blue"
+                    android:theme="@style/checkbox" />
+
+                <TextView
+                    android:id="@+id/third_useful_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"
+                    android:gravity="right"
+                    android:paddingTop="5dp"
+
+                    android:text="کودهای نیتروژن دار"
+                    android:textColor="@color/blue"
+                    android:textIsSelectable="false"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/button"
+                android:cursorVisible="false"
+                android:text="ثبت"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_marginBottom="30dp"
+                android:background="#FFFF"
+                android:dividerPadding="50dp"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/next1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+
+
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:text="مرحله ی بعد"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+
+
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:text="مرحله ی قبل"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </GridLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

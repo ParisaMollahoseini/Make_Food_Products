@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_useless_compost">
+        <item>"--یکی از کودهای زیر را انتخاب کنید--</item>
+        <item>"کود دارای آهن"</item>
+        <item>"کود دارای منگنز"</item>
+        <item>"کود دارای روی"</item>
+        <item>"کود دارای مس"</item>
+        <item>"کود دارای بور"</item>
+        <item>"کود دارای کلر"</item>
+        <item>"کود دارای مولیبدن"</item>
+    </string-array>
+    <string-array name="Fe_composts">
+        <item>"کلات آهن"</item>
+    </string-array>
+    <string-array name="Mn_composts">
+        <item>"سولفات منگنز"</item>
+        <item>"کلات منگنز"</item>
+    </string-array>
+    <string-array name="Zn_composts">
+        <item>"سولفات روی"</item>
+        <item>"کلات روی"</item>
+    </string-array>
+    <string-array name="Cu_composts">
+        <item>"سولفات مس"</item>
+        <item>"کلات مس"</item>
+    </string-array>
+    <string-array name="B_composts">
+        <item>"اسید بوریک"</item>
+        <item>"بوراکس"</item>
+    </string-array>
+    <string-array name="Mo_composts">
+        <item>"مولیبدات سدیم"</item>
+        <item>"مولیبدات آمونیوم"</item>
+    </string-array>
+    <string-array name="Cl_composts">
+        <item>"کلرور پتاسیم"</item>
+        <item>"کلرور کلسیم"</item>
+    </string-array>
+</resources>

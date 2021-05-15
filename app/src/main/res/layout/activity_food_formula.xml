@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#FFFF">
+
+    <TextView
+        android:id="@+id/title6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:foregroundGravity="right"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:paddingRight="3dp"
+        android:text="فرمول غذایی"
+        android:textColor="@color/main_color"
+        android:textSize="50dp" />
+    <View
+        android:id="@+id/divider_food_formula"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/title6"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+
+        android:background="#039E43" />
+        <GridLayout
+            android:id="@+id/grid6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFF"
+            android:columnCount="1"
+            android:orientation="vertical"
+            android:rowCount="2"
+            android:rowOrderPreserved="false"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="right"
+            android:layout_below="@id/divider_food_formula"
+            >
+
+            <LinearLayout
+                android:id="@+id/cucumber_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFF"
+                android:baselineAligned="false"
+                android:dividerPadding="10dp"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+
+                >
+
+
+
+                <TextView
+                    android:id="@+id/cucumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+
+                    android:text="خیار"
+                    android:background="@color/main_color"
+                    android:textColor="#FFFF"
+                    android:textIsSelectable="true"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <ScrollView
+                android:id="@+id/container_scroll_view"
+                style="@android:style/Widget.Holo.Light.ScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_row="1"
+                android:layout_marginBottom="100dp"
+                android:overScrollMode="always"
+                android:scrollbarFadeDuration="250">
+
+                <GridLayout
+                    android:id="@+id/grid6_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="1"
+                    android:orientation="vertical"
+                    android:rowCount="15"
+                    android:rowOrderPreserved="false"
+                    android:scrollbars="vertical"
+                    android:verticalScrollbarPosition="right">
+
+                    <LinearLayout
+                        android:id="@+id/title_of_write_density"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_marginBottom="5dp"
+                        android:background="#FFFF"
+
+                        android:dividerPadding="0dp">
+
+                        <TextView
+                            android:id="@+id/N_density_title"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="30dp"
+
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="20dp"
+
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner2"
+
+                            android:gravity="right"
+                            android:paddingRight="10dp"
+                            android:text="غلظت عناصر زیر را به میلی گرم بر لیتر وارد کنید :"
+                            android:textColor="#FFFF"
+                            android:textIsSelectable="false"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/N_density_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/spinner2"
+                        android:dividerPadding="50dp"
+
+
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/edit_N_density"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/edit" />
+
+
+                        <TextView
+                            android:id="@+id/N_density_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:includeFontPadding="false"
+                            android:paddingRight="10dp"
+
+                            android:text="نیتروژن:"
+                            android:textColor="#FFFF"
+
+                            android:textIsSelectable="false"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/P_density_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="2"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/spinner"
+                        android:divider="@color/colorPrimaryDark"
+                        android:dividerPadding="50dp"
+
+
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/edit_P_density"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext2"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="numberDecimal"
+                            android:textColor="#FFFF" />
+
+
+                        <TextView
+                            android:id="@+id/P_density_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="#FFFF"
+                            android:gravity="right"
+                            android:includeFontPadding="false"
+                            android:paddingRight="10dp"
+
+                            android:text="فسفر:"
+                            android:textColor="@color/main_color"
+
+                            android:textIsSelectable="false"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/K_density_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/spinner2"
+                        android:dividerPadding="50dp"
+
+
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/edit_K_density"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/edit" />
+
+
+                        <TextView
+                            android:id="@+id/K_density_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:includeFontPadding="false"
+                            android:paddingRight="10dp"
+
+                            android:text="پتاسیم"
+                            android:textColor="#FFFF"
+
+                            android:textIsSelectable="false"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Ca_density_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="4"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/spinner"
+                        android:dividerPadding="50dp"
+
+
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/edit_Ca_density"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext2"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="numberDecimal"
+                            android:textColor="#FFFF" />
+
+
+                        <TextView
+                            android:id="@+id/Ca_density_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:includeFontPadding="false"
+                            android:paddingRight="10dp"
+
+                            android:text="کلسیم:"
+                            android:textColor="@color/main_color"
+
+                            android:textIsSelectable="false"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Mg_density_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="5"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/spinner2"
+                        android:dividerPadding="50dp"
+
+
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/edit_Mg_density"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/edit" />
+
+
+                        <TextView
+                            android:id="@+id/Mg_density_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:includeFontPadding="false"
+                            android:paddingRight="10dp"
+
+                            android:text="منیزیم:"
+                            android:textColor="#FFFF"
+
+                            android:textIsSelectable="false"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/S_density_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="6"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/spinner"
+                        android:dividerPadding="50dp"
+
+
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/edit_S_density"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext2"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="numberDecimal"
+                            android:textColor="#FFFF" />
+
+
+                        <TextView
+                            android:id="@+id/S_density_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:includeFontPadding="false"
+                            android:paddingRight="10dp"
+
+                            android:text="گوگرد:"
+                            android:textColor="@color/main_color"
+
+                            android:textIsSelectable="false"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Fe_density_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="7"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/spinner2"
+                        android:dividerPadding="50dp"
+
+
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/edit_Fe_density"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/edit" />
+
+
+                        <TextView
+                            android:id="@+id/Fe_density_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:includeFontPadding="false"
+                            android:paddingRight="10dp"
+
+                            android:text="آهن:"
+                            android:textColor="#FFFF"
+
+                            android:textIsSelectable="false"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Mn_density_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="8"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/spinner"
+                        android:dividerPadding="50dp"
+
+
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/edit_Mn_density"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext2"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="numberDecimal"
+                            android:textColor="#FFFF" />
+
+
+                        <TextView
+                            android:id="@+id/Mn_density_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:includeFontPadding="false"
+                            android:paddingRight="10dp"
+
+                            android:text="منگنز:"
+                            android:textColor="@color/main_color"
+
+                            android:textIsSelectable="false"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/B_density_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="9"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/spinner2"
+                        android:dividerPadding="50dp"
+
+
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/edit_B_density"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/edit" />
+
+
+                        <TextView
+                            android:id="@+id/B_density_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:includeFontPadding="false"
+                            android:paddingRight="10dp"
+
+                            android:text="بور:"
+                            android:textColor="#FFFF"
+
+                            android:textIsSelectable="false"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Cl_density_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="10"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/spinner"
+                        android:dividerPadding="50dp"
+
+
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/edit_Cl_density"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext2"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="numberDecimal"
+                            android:textColor="#FFFF" />
+
+
+                        <TextView
+                            android:id="@+id/Cl_density_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:includeFontPadding="false"
+                            android:paddingRight="10dp"
+
+                            android:text="کلر:"
+                            android:textColor="@color/main_color"
+
+                            android:textIsSelectable="false"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Zn_density_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="11"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/spinner2"
+                        android:dividerPadding="50dp"
+
+
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/edit_Zn_density"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/edit" />
+
+
+                        <TextView
+                            android:id="@+id/Zn_density_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:includeFontPadding="false"
+                            android:paddingRight="10dp"
+
+                            android:text="روی:"
+                            android:textColor="#FFFF"
+
+                            android:textIsSelectable="false"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Cu_density_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="12"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/spinner"
+                        android:dividerPadding="50dp"
+
+
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/edit_Cu_density"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext2"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="numberDecimal"
+                            android:textColor="#FFFF" />
+
+
+                        <TextView
+                            android:id="@+id/Cu_density_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:includeFontPadding="false"
+                            android:paddingRight="10dp"
+
+                            android:text="مس:"
+                            android:textColor="@color/main_color"
+
+                            android:textIsSelectable="false"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Mo_density_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="13"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="50dp"
+                        android:background="@drawable/spinner2"
+                        android:dividerPadding="50dp"
+
+
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/edit_Mo_density"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/edit" />
+
+
+                        <TextView
+                            android:id="@+id/Mo_density_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:includeFontPadding="false"
+                            android:paddingRight="10dp"
+
+                            android:text="مولیبدن:"
+                            android:textColor="#FFFF"
+
+                            android:textIsSelectable="false"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/button_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="14"
+
+                        android:layout_marginLeft="30dp"
+
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/next5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+
+
+                            android:layout_weight="1"
+                            android:background="@drawable/button"
+                            android:text="مرحله ی بعد"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/back5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+
+
+                            android:layout_weight="1"
+                            android:background="@drawable/button"
+                            android:text="مرحله ی قبل"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </GridLayout>
+            </ScrollView>
+
+        </GridLayout>
+
+
+
+</RelativeLayout>

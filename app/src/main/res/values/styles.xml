@@ -1,0 +1,19 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <style name="checkbox" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/blue</item>   <!-- normal border color change as you wish -->
+        <item name="colorControlActivated">@color/blue</item> <!-- activated color change as you wish -->
+    </style>
+    <style name="checkbox_2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#FFFF</item>   <!-- normal border color change as you wish -->
+        <item name="colorControlActivated">#FFFF</item> <!-- activated color change as you wish -->
+    </style>
+
+</resources>
